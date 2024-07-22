@@ -1,6 +1,5 @@
-
-
-export const API_KEY = process.env.REACT_APP_API_KEY;
+export const API_KEY = import.meta.env.VITE_API_KEY;
+console.log('api_key:', API_KEY)
 
 export const value_converter = (value) => {
     if (value >= 1000000) {
